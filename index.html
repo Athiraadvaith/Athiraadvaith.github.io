@@ -1,10 +1,138 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Athira Krishnan — Portfolio</title>
+  <meta name="description" content="Athira Krishnan — Web Developer, Designer and Administrator. Portfolio showcasing projects, skills and contact." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>This is my professional portfolio.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Athira Krishnan</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hi, I’m <span class="accent">Athira Krishnan</span>.</h1>
+          <p class="lead">Web Developer · Designer · Administrator — I build accessible, responsive web experiences and keep sites running smoothly.</p>
+          <p>
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-outline" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-photo">
+          <!-- Replace with your photo -->
+          <img src="assets/profile-placeholder.png" alt="Profile photo of Athira Krishnan" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>About</h2>
+      <p>
+        I'm a Web Developer and Designer who also handles administration and operations for websites and small systems. I focus on building performant, accessible user interfaces and designing clean experiences that solve real problems.
+      </p>
+      <p>
+        My work spans front-end development (HTML/CSS/JavaScript, component-based frameworks), visual design, and the practical aspects of running and maintaining sites — deployments, monitoring, and basic system administration.
+      </p>
+    </section>
+
+    <section class="skills container" id="skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML &amp; CSS (Flexbox, Grid)</li>
+        <li>JavaScript (ES6+), TypeScript</li>
+        <li>React, Vite</li>
+        <li>Accessibility &amp; Performance</li>
+        <li>Node.js &amp; APIs</li>
+        <li>Design systems &amp; UI/UX principles</li>
+        <li>System / Site Administration</li>
+      </ul>
+    </section>
+
+    <section class="projects container" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project card 1 -->
+        <article class="project-card">
+          <img src="assets/project-1.png" alt="Project 1 screenshot" />
+          <div class="project-content">
+            <h3>Project One</h3>
+            <p class="project-desc">A short description of project one — what it does and who it's for.</p>
+            <p class="project-tech">React • Node • CSS</p>
+            <p class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a> ·
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="project-card">
+          <img src="assets/project-2.png" alt="Project 2 screenshot" />
+          <div class="project-content">
+            <h3>Project Two</h3>
+            <p class="project-desc">Short summary of project two. Mention your impact or any metrics.</p>
+            <p class="project-tech">Vue • Firebase</p>
+            <p class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live</a> ·
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or just want to say hi, email me at <a id="email-link" href="mailto:your.email@example.com">your.email@example.com</a> or fill the form below.</p>
+
+      <form id="contact-form" class="contact-form" action="javascript:void(0);">
+        <label>
+          Name
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+        <button class="btn" id="send-btn" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Athira Krishnan — Built with ❤️</p>
+      <p class="socials">
+        <a href="#" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="#" target="_blank" rel="noopener">Twitter</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
