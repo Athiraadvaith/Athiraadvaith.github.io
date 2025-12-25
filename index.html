@@ -1,138 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Athira Krishnan — Portfolio</title>
-  <meta name="description" content="Athira Krishnan — Web Developer, Designer and Administrator. Portfolio showcasing projects, skills and contact." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Athira Krishnan | Web Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .about p {
+      max-width: 800px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">Athira Krishnan</a>
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
-        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">☰</button>
-      </div>
-    </div>
+
+  <header>
+    <h1>Athira Krishnan</h1>
+    <p>Web Developer | WordPress | PHP | Front-End</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div>
-          <h1>Hi, I’m <span class="accent">Athira Krishnan</span>.</h1>
-          <p class="lead">Web Developer · Designer · Administrator — I build accessible, responsive web experiences and keep sites running smoothly.</p>
-          <p>
-            <a class="btn" href="#projects">See my work</a>
-            <a class="btn btn-outline" href="#contact">Get in touch</a>
-          </p>
-        </div>
-        <div class="hero-photo">
-          <!-- Replace with your photo -->
-          <img src="assets/profile-placeholder.png" alt="Profile photo of Athira Krishnan" />
-        </div>
-      </div>
-    </section>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Dedicated and collaborative Web Developer with 5+ years of experience
+      building custom WordPress websites, optimizing user experience, and
+      delivering clean, accessible, and responsive solutions.
+      Passionate about modern web standards and performance-driven design.
+    </p>
+  </section>
 
-    <section class="about container" id="about">
-      <h2>About</h2>
-      <p>
-        I'm a Web Developer and Designer who also handles administration and operations for websites and small systems. I focus on building performant, accessible user interfaces and designing clean experiences that solve real problems.
-      </p>
-      <p>
-        My work spans front-end development (HTML/CSS/JavaScript, component-based frameworks), visual design, and the practical aspects of running and maintaining sites — deployments, monitoring, and basic system administration.
-      </p>
-    </section>
-
-    <section class="skills container" id="skills">
-      <h2>Skills</h2>
-      <ul class="skill-list">
-        <li>HTML &amp; CSS (Flexbox, Grid)</li>
-        <li>JavaScript (ES6+), TypeScript</li>
-        <li>React, Vite</li>
-        <li>Accessibility &amp; Performance</li>
-        <li>Node.js &amp; APIs</li>
-        <li>Design systems &amp; UI/UX principles</li>
-        <li>System / Site Administration</li>
-      </ul>
-    </section>
-
-    <section class="projects container" id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <!-- Project card 1 -->
-        <article class="project-card">
-          <img src="assets/project-1.png" alt="Project 1 screenshot" />
-          <div class="project-content">
-            <h3>Project One</h3>
-            <p class="project-desc">A short description of project one — what it does and who it's for.</p>
-            <p class="project-tech">React • Node • CSS</p>
-            <p class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live</a> ·
-              <a href="#" target="_blank" rel="noopener">Source</a>
-            </p>
-          </div>
-        </article>
-
-        <!-- Project card 2 -->
-        <article class="project-card">
-          <img src="assets/project-2.png" alt="Project 2 screenshot" />
-          <div class="project-content">
-            <h3>Project Two</h3>
-            <p class="project-desc">Short summary of project two. Mention your impact or any metrics.</p>
-            <p class="project-tech">Vue • Firebase</p>
-            <p class="project-links">
-              <a href="#" target="_blank" rel="noopener">Live</a> ·
-              <a href="#" target="_blank" rel="noopener">Source</a>
-            </p>
-          </div>
-        </article>
-
-        <!-- Add more project cards as needed -->
-      </div>
-    </section>
-
-    <section class="contact container" id="contact">
-      <h2>Contact</h2>
-      <p>If you'd like to work together or just want to say hi, email me at <a id="email-link" href="mailto:your.email@example.com">your.email@example.com</a> or fill the form below.</p>
-
-      <form id="contact-form" class="contact-form" action="javascript:void(0);">
-        <label>
-          Name
-          <input type="text" name="name" id="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" id="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" id="message" rows="6" required></textarea>
-        </label>
-        <button class="btn" id="send-btn" type="submit">Send message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Athira Krishnan — Built with ❤️</p>
-      <p class="socials">
-        <a href="#" target="_blank" rel="noopener">GitHub</a> ·
-        <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a href="#" target="_blank" rel="noopener">Twitter</a>
-      </p>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-box">HTML, CSS, SCSS</div>
+      <div class="skill-box">JavaScript, jQuery</div>
+      <div class="skill-box">PHP & WordPress</div>
+      <div class="skill-box">Bootstrap & Responsive Design</div>
+      <div class="skill-box">SEO & Google Analytics</div>
+      <div class="skill-box">Figma, Canva, Adobe Tools</div>
     </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Custom WordPress Website</h3>
+        <p>Developed a fully custom WordPress theme using PHP, ACF, and SCSS.</p>
+      </div>
+      <div class="project">
+        <h3>Landing Page Design</h3>
+        <p>SEO-optimized landing pages built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>E-Commerce Site</h3>
+        <p>WooCommerce-based online store with payment and product management.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:athirakrishnan590@gmail.com">athirakrishnan590@gmail.com</a><br><br>
+      🔗 <a href="https://www.linkedin.com/in/athira-abhilash590/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Athira Krishnan. All rights reserved.
   </footer>
 
-  <script src="script.js" defer></script>
 </body>
 </html>
